@@ -1,0 +1,287 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* UPLOAD SECTION */
+.upload-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.upload-card h3 {
+  margin-bottom: 10px;
+}
+
+/* FILE INPUT */
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+}
+
+/* BUTTON */
+.action {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* RESULT HERO */
+.result-hero {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+/* DECISION BOX */
+.decision-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.decision-box h2 {
+  margin-bottom: 10px;
+}
+
+/* BIG STATUS TEXT */
+.status-text {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* STATUS COLORS */
+.status-text.eligible {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-text.not-eligible {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-text.review {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* SUMMARY BOX */
+.summary-box {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.summary-box h3 {
+  margin-bottom: 8px;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
+
+/* INSIGHTS SECTION */
+.insights {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* INSIGHT CARD */
+.insight-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.insight-card h3 {
+  margin-bottom: 15px;
+}
+
+/* CONFIDENCE BAR */
+.confidence-item {
+  margin-bottom: 12px;
+}
+
+.confidence-label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.confidence-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+}
+
+/* AUDIT TRAIL */
+.audit-item {
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* RESULTS SECTION */
+.results-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+/* RESULT GRID */
+#resultsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* RESULT CARD */
+.result-card {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+/* TITLE */
+.result-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* STATUS BADGE */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+/* COLORS */
+.badge-eligible {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-not {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-review {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* REASON TEXT */
+.result-reason {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* PREVIEW SECTION */
+.preview-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.preview-card {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.preview-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* LOADER */
+#loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
+}
